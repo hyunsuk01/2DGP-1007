@@ -59,7 +59,7 @@ def draw_line(p1, p2):
     x1, y1 = p1
     x2, y2 = p2
 
-    for i in range(0, 100+2, 2):
+    for i in range(0, -100-4, -4):
         t = i / 100
         x = (1 - t) * x1 + t * x2
         y = (1 - t) * y1 + t * y2
@@ -134,10 +134,12 @@ a2 = -158, -54
 b1 = 154, -205
 b2 = 131, 293
 
+draw_line((-100, -20), (100, 30))
+
 # draw_line(a1, a2)
 # draw_line(b1, b2)
 
-draw_curve(a1, a2, b1, b2)
+# draw_curve(a1, a2, b1, b2)
 
 
 turtle.done()
